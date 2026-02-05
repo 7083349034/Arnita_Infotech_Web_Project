@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Appointment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Book Appointment</h2>
+
+<form id="appointmentForm">
+  <input type="text" placeholder="Patient Name" required>
+  <input type="email" placeholder="Email" required>
+
+  <select required>
+    <option value="">Select Department</option>
+    <option>Cardiology</option>
+    <option>Orthopedics</option>
+    <option>Neurology</option>
+  </select>
+
+  <input type="date" id="date" required>
+  <input type="time" required>
+
+  <button type="submit">Book</button>
+</form>
+
+<p id="msg"></p>
+
+<script src="appointment.js"></script>
+</body>
+</html>
